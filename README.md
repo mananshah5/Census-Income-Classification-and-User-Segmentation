@@ -23,9 +23,7 @@ This project simulates a real-world data science project for a **retail client**
 ├── ML-TakehomeProject.pdf         # Original project specification
 ├── Project Report.pdf             # Final analysis report
 ├── README.md                      # This file
-├── requirements.txt               # Python dependencies
-├── catboost_info/                 # CatBoost model artifacts (auto-generated)
-└── .qodo                          # Configuration file
+└── requirements.txt               # Python dependencies
 ```
 
 ---
