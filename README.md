@@ -92,30 +92,15 @@ All models optimized for **F1 score** on the minority class (income >$50K):
 Ensure both data files are in the project root:
 ```python
 # Column names
-with open("census-bureau.columns") as f:
-    columns = [line.strip() for line in f.readlines()]
+columns_file = 'census-bureau.columns'
+data_file = 'census-bureau.data'
+columns = pd.read_csv(columns_file, header=None).iloc[:, 0].tolist()
 
 # Load dataset
-df = pd.read_csv("census-bureau.data", names=columns, header=None)
+df = pd.read_csv(data_file, delimiter=',', header=None, names=columns)
 ```
 
 ---
-
-## 🔍 Key Features
-
-### Classification Model
-- Handles **40+ demographic features** (age, education, occupation, marital status, etc.)
-- Addresses severe **class imbalance** (minority class ~7%)
-- Implements **threshold tuning** for optimal F1 score
-- Compares multiple algorithms (Logistic Regression, XGBoost, CatBoost)
-
-### Segmentation Model
-- **Unsupervised clustering** to discover natural customer segments
-- Creates interpretable **population personas** for marketing
-- Evaluates cluster quality with silhouette scores and visual analysis
-
----
-
 ## Dataset Information
 
 **Source:** U.S. Census Bureau Current Population Survey (1994-1995)  
@@ -127,6 +112,5 @@ df = pd.read_csv("census-bureau.data", names=columns, header=None)
 
 ## 📄 Documentation
 
-- `ML-TakehomeProject.pdf` – Original project requirements
 - `Project Report.pdf` – Comprehensive analysis findings and recommendations
 - Notebook outputs include inline visualizations and detailed commentary
