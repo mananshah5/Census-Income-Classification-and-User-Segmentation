@@ -1,6 +1,6 @@
 # Retail Marketing Analytics: Income Classification & Customer Segmentation
 
-## 📊 Project Overview
+## Project Overview
 
 This project simulates a real-world data science project for a **retail client** seeking actionable marketing insights from population data. It demonstrates end-to-end machine learning workflows on **U.S. Census Bureau Current Population Survey (1994–1995)** data.
 
@@ -12,7 +12,7 @@ This project simulates a real-world data science project for a **retail client**
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -28,7 +28,7 @@ This project simulates a real-world data science project for a **retail client**
 
 ---
 
-## 🎯 Model Performance
+## Model Performance
 
 ### Classification Results (Test Set)
 
@@ -45,7 +45,7 @@ All models optimized for **F1 score** on the minority class (income >$50K):
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 
 ### Installation
@@ -108,7 +108,7 @@ df = pd.read_csv(data_file, delimiter=',', header=None, names=columns)
 
 ---
 
-## 📄 Documentation
+## Documentation
 
 - `Project Report.pdf` – Comprehensive analysis findings and recommendations
 - Notebook outputs include inline visualizations and detailed commentary
